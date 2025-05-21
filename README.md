@@ -1,20 +1,20 @@
 # Blue Sentinel
 A Security Information and Event Management (SIEM) System using Python and OpenSearch
 ## Features
-•	A Security Information and Event Management System with Threat Intelligence detection and alerting.
-•	Event sources include: Windows System logs, Windows Defender Firewall logs and Sysmon logs.
-•	Technologies Used:
-o	Python – Log extraction, parsing and ingestion pipeline + Threat Intelligence backend engine.
-o	OpenSearch – Log database for indexing and querying
-o	OpenSearch Dashboards – To provide visual insights into event’s data.
-•	Logs from multiple sources are normalized to ECS format for easier detection and compatibility with OpenSearch (reference used: https://www.elastic.co/docs/reference/ecs/ecs-field-reference)
-•	Backend Config:
-o	Python backend allows config editing for custom triggers like malicious alert score limit, Geo-IP blacklisting of cities, regions or countries and authentication failure alerts.
-o	Config can also be modified to enable\disable threat intel API’s further giving more control for customizing detection rules.  
-•	Threat Intelligence Enrichment
-o	Windows Firewall logs are enriched with threat intel data from AbusePDB, Virus Total and IPInfo APIs for malicious score rating, IP reputation and TOR detection.
-o	Tracing IP to its City, Region and Country based locations and finally enabling custom thresholds for malicious score alerts and custom blacklisting for Geo-IP tracking alerts.
-•	Dashboards (OpenSearch Dashboards)
+•	A Security Information and Event Management System with Threat Intelligence detection and alerting.  
+•	Event sources include: Windows System logs, Windows Defender Firewall logs and Sysmon logs.  
+•	Technologies Used:  
+o	Python – Log extraction, parsing and ingestion pipeline + Threat Intelligence backend engine.  
+o	OpenSearch – Log database for indexing and querying  
+o	OpenSearch Dashboards – To provide visual insights into event’s data.  
+•	Logs from multiple sources are normalized to ECS format for easier detection and compatibility with OpenSearch (reference used: https://www.elastic.co/docs/reference/ecs/ecs-field-reference)  
+•	Backend Config:  
+o	Python backend allows config editing for custom triggers like malicious alert score limit, Geo-IP blacklisting of cities, regions or countries and authentication failure alerts.  
+o	Config can also be modified to enable\disable threat intel API’s further giving more control for customizing detection rules.    
+•	Threat Intelligence Enrichment  
+o	Windows Firewall logs are enriched with threat intel data from AbusePDB, Virus Total and IPInfo APIs for malicious score rating, IP reputation and TOR detection.  
+o	Tracing IP to its City, Region and Country based locations and finally enabling custom thresholds for malicious score alerts and custom blacklisting for Geo-IP tracking alerts.  
+•	Dashboards (OpenSearch Dashboards)  
 o	Summarized into 8 visualizations for deep insights into system and network events of the host.
 o	Threat Alerts: A table displaying the details of events which triggered alerts.
 o	IP Status: A pie chart showing IP enrichment status categorized into Clean, Probably Clean, Suspicious, Dangerous and Not Categorized based on the malicious score.
