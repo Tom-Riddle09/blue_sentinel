@@ -47,7 +47,7 @@ o	This script also contains some additional options, for OpenSearch client opera
 #### Windows Firewall:  
 	Open Windows Defender Firewall with Advanced Security (run as administrator).  
 	Go to Actions > Properties > Logging   
-	Select Customize > select a path for saving logs (preferably somewhere you have permission to access the files.)  
+	Select Customize > select a path for saving logs (preferably somewhere you have permission to access the files, remember to add this location to "blue_sentinel.py" file, line no. 111 )  
 	Select “Yes” for both logging successful connections and dropped packets, click ok. (enable for Domain, Private and Public profiles.)  
 #### SysLog:  
 	Download syslog configuration file: https://github.com/SwiftOnSecurity/sysmon-config/blob/master/sysmonconfig-export.xml  
